@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Джигглипафф - самый певучий покемон">
+  <title>Джигглипафф - Певчий Покемон</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎵</text></svg>">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="auth-form">
+        <h2><i class="fas fa-user-circle"></i> Вход</h2>
+        <form id="loginForm">
+          <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Логин" name="username" required>
+          </div>
+          <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Пароль" name="password" required>
+          </div>
+          <button type="submit" class="btn-primary">
+            <i class="fas fa-sign-in-alt"></i> Войти
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="pokemon-card">
+        <div class="pokemon-image">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png" 
+               alt="Джигглипафф" loading="lazy" class="pokemon-img">
+          <div class="pokemon-id">#039</div>
+        </div>
+        
+        <div class="pokemon-info">
+          <h1 class="pokemon-name">Джигглипафф</h1>
+          <div class="pokemon-type" style="background-color: #FF9EB5;">Певчий</div>
+          
+          <div class="stats">
+            <div class="stat-item">
+              <i class="fas fa-microphone-alt"></i>
+              <span>Пение 100%</span>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-heart"></i>
+              <span>Милота 95%</span>
+            </div>
+          </div>
+          
+          <p class="pokemon-description">
+            Этот покемон использует свои огромные глаза, чтобы очаровывать противников. 
+            Его голос обладает удивительным диапазоном и может усыпить любого.
+          </p>
+          
+          <div class="actions">
+            <a href="https://pokemon.fandom.com/ru/wiki/Джигглипафф" target="_blank" class="btn-outline">
+              <i class="fas fa-book"></i> Подробнее
+            </a>
+            <button class="heart-btn" aria-label="Добавить в избранное">
+              <i class="far fa-heart"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3><i class="fas fa-info-circle"></i> О покемоне</h3>
+          <p>Джигглипафф — покемон нормального и фэйри-типа из региона Канто.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h3><i class="fas fa-share-alt"></i> Соцсети</h3>
+          <div class="social-icons">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>© 2023 Покемон Джигглипафф | Неофициальный фанатский сайт</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
